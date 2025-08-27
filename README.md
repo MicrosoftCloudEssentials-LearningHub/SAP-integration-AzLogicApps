@@ -165,11 +165,112 @@ Last updated: 2025-08-27
 
 ### Azure API Management Gateway
 
-### Azure Fuction App 
+> Deploys Azure API Management (APIM) as a gateway between Logic Apps and SAP to maintain session state and properly format headers. This approach leverages APIM's powerful policy engine to handle complex header manipulation, authentication, and session management requirements for SAP integration.
+
+<details>
+<summary><b>How It Works</b> (Click to expand)</summary>
+
+1. Create an API in Azure API Management that proxies your SAP OData endpoints
+2. Configure policies in APIM to:
+   - Extract and store CSRF tokens from SAP responses
+   - Properly format and manage cookies across requests
+   - Handle authentication headers and session persistence
+   - Apply consistent header formatting rules
+3. Logic App calls the APIM endpoint instead of calling SAP directly
+4. APIM handles all cookie and token management behind the scenes
+5. APIM forwards properly formatted requests to SAP
+6. APIM returns SAP responses to the Logic App, handling any required transformations
+
+</details>
+
+<details>
+<summary><b>Pros:</b> (Click to expand)</summary>
+
+- Proper session management with built-in cookie handling capabilities
+- Consistent header formatting using APIM's policy expressions
+- Can add security policies for authentication, throttling, and IP filtering
+- Reusable for multiple Logic Apps, providing a centralized integration point
+- Better performance monitoring with detailed metrics and logging
+- Can implement complex request/response transformations using policies
+- Supports caching to reduce load on SAP systems
+- Provides a facade that shields Logic Apps from SAP API changes
+- Enables more advanced error handling and retry mechanisms
+- Supports mocking and testing without calling actual SAP endpoints
+
+</details>
+
+<details>
+<summary><b>Considerations:</b> (Click to expand)</summary>
+
+- Additional Azure service to deploy, configure, and manage
+- Added cost for APIM service (though consumption tier may be cost-effective)
+- More complex architecture with an additional component
+- Additional network hop that could impact performance
+- Requires knowledge of APIM policy expressions and configuration
+- Debugging can be more complex with distributed components
+- Initial setup requires more time and planning
+- May be overkill for simple integration scenarios
+- Adds another potential point of failure in the architecture
+- Requires ongoing maintenance of both Logic Apps and APIM components
+
+</details>
+
+### Azure Function Intermediary
+
+> Creates a custom Azure Function to handle communication with SAP, managing cookies, CSRF tokens, and header formatting. This approach uses code in a language like C# or JavaScript to handle HTTP requests with full control over headers, authentication, and session state.
+
+<details>
+<summary><b>How It Works</b> (Click to expand)</summary>
+
+1. Create an Azure Function with an HTTP trigger
+2. Implement the function with code that:
+   - Receives requests from Logic Apps
+   - Handles SAP authentication and session persistence
+   - Manages cookies and CSRF tokens correctly
+   - Makes properly formatted HTTP requests to SAP
+   - Returns SAP responses to Logic Apps with any required transformations
+3. Logic App calls the Azure Function instead of SAP directly
+4. Function maintains session context and handles all cookie formatting
+5. Function implements proper error handling and retries as needed
+6. Function returns processed results to Logic App
+
+</details>
+
+<details>
+<summary><b>Pros:</b> (Click to expand)</summary>
+
+- Full control over HTTP requests using HttpClient or similar libraries
+- Proper cookie and session handling with programmatic control
+- Can implement complex logic in a full programming language (C#, JavaScript, etc.)
+- Better error handling capabilities with try/catch blocks and custom logic
+- Reusable component that can be called from multiple Logic Apps
+- Can leverage full debugging capabilities in development environments
+- Supports automated testing with unit and integration tests
+- Code can be maintained in source control with proper CI/CD processes
+- Can implement advanced authentication and security patterns
+- Provides complete flexibility for complex integration requirements
+
+</details>
+
+<details>
+<summary><b>Considerations:</b> (Click to expand)</summary>
+
+- Additional Azure service to deploy, configure, and manage
+- Added development effort to create and maintain custom code
+- More complex architecture with an additional component
+- Additional network hop that could impact performance
+- Requires software development skills beyond Logic Apps configuration
+- Cold start delays possible with consumption plan Functions
+- Must handle scaling and performance considerations
+- Additional cost for Azure Functions execution and storage
+- Debugging across components can be more challenging
+- Requires proper error handling to avoid failed states
+
+</details>
 
 ## Implementation workflow
 
-<img width="1570" height="1560" alt="LogicApps-SAP-OData-Logic Apps integration drawio" src="https://github.com/user-attachments/assets/e5337799-99d0-40da-9a05-c29df47c9b11" />
+<img width="1222" height="1561" alt="image" src="https://github.com/user-attachments/assets/8c87803d-81e0-40f1-9032-072bd008d61a" />
 
 
 <!-- START BADGE -->
