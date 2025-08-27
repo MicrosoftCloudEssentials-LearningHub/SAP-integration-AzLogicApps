@@ -224,12 +224,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="tIY4TRThyhfj4UJLMwuX" name="Logic Apps integration">
-    <mxGraphModel dx="4016" dy="2507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3304" dy="2087" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="background" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor:#212121;strokeColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-280" y="-30" width="1450" height="1510" as="geometry" />
+          <mxGeometry x="-70" y="-20" width="1240" height="1500" as="geometry" />
         </mxCell>
         <mxCell id="2" value="Azure Logic Apps Integration with SAP OData Services" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="184.5" y="20" width="800" height="40" as="geometry" />
@@ -255,16 +255,16 @@
         <mxCell id="debug2" value="&lt;b&gt;Debug: Log Formatted Cookie&lt;/b&gt;&lt;br&gt;Compose action to log final cookie string" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6A1B9A;strokeColor=#4A148C;fontColor=#FFFFFF;arcSize=0;" parent="1" vertex="1">
           <mxGeometry x="730" y="460" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="optionA" value="&lt;b&gt;Option A: Inline JavaScript&lt;/b&gt;&lt;br&gt;Split and extract name=value parts&lt;br&gt;✅ Recommended approach" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00C853;strokeColor=#00B248;fontColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="optionA" value="&lt;b&gt;Option A: Inline JavaScript&lt;/b&gt;&lt;br&gt;Split and extract name=value parts&lt;br&gt;✅ Recommended approach" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00C853;strokeColor=#00B248;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="300" y="580" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="optionB" value="&lt;b&gt;Option B: Logic Apps Actions&lt;/b&gt;&lt;br&gt;Parse with built-in functions&lt;br&gt;❌ Often fails with SAP due to missconfiguration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF5252;strokeColor=#D50000;fontColor=#FFFFFF;opacity=70;" vertex="1" parent="1">
+        <mxCell id="optionB" value="&lt;b&gt;Option B: Logic Apps Actions&lt;/b&gt;&lt;br&gt;Parse with built-in functions&lt;br&gt;❌ Often fails with SAP due to missconfiguration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF5252;strokeColor=#D50000;fontColor=#FFFFFF;opacity=70;" parent="1" vertex="1">
           <mxGeometry x="500" y="580" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="optionC" value="&lt;b&gt;Option C: API Management&lt;/b&gt;&lt;br&gt;Use as middleware layer&lt;br&gt;⚠️ Requires additional service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#78909C;strokeColor=#546E7A;fontColor=#FFFFFF;opacity=50;" vertex="1" parent="1">
+        <mxCell id="optionC" value="&lt;b&gt;Option C: API Management&lt;/b&gt;&lt;br&gt;Use as middleware layer&lt;br&gt;⚠️ Requires additional service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#78909C;strokeColor=#546E7A;fontColor=#FFFFFF;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="700" y="580" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="optionD" value="&lt;b&gt;Option D: Azure Function&lt;/b&gt;&lt;br&gt;Custom HTTP handling&lt;br&gt;⚠️ Requires additional service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#78909C;strokeColor=#546E7A;fontColor=#FFFFFF;opacity=50;" vertex="1" parent="1">
+        <mxCell id="optionD" value="&lt;b&gt;Option D: Azure Function&lt;/b&gt;&lt;br&gt;Custom HTTP handling&lt;br&gt;⚠️ Requires additional service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#78909C;strokeColor=#546E7A;fontColor=#FFFFFF;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="900" y="590" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8" value="&lt;b&gt;Condition&lt;/b&gt;&lt;br&gt;useEtag is true AND etag is not empty?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F9A825;strokeColor=#F57F17;fontColor=#000000;" parent="1" vertex="1">
@@ -321,7 +321,7 @@
             <mxPoint x="740" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="optionArrow1" value="" style="endArrow=classic;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#4CAF50;" edge="1" parent="1" source="7" target="optionA">
+        <mxCell id="optionArrow1" value="" style="endArrow=classic;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#4CAF50;" parent="1" source="7" target="optionA" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="580" y="560" as="sourcePoint" />
             <mxPoint x="390" y="580" as="targetPoint" />
@@ -331,7 +331,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="optionArrow2" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#F44336;dashed=1;" edge="1" parent="1" source="7" target="optionB">
+        <mxCell id="optionArrow2" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#F44336;dashed=1;" parent="1" source="7" target="optionB" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="520" y="560" as="sourcePoint" />
             <mxPoint x="400" y="590" as="targetPoint" />
@@ -341,7 +341,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="optionArrow3" value="" style="endArrow=classic;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#BDBDBD;dashed=1;" edge="1" parent="1" source="7" target="optionC">
+        <mxCell id="optionArrow3" value="" style="endArrow=classic;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#BDBDBD;dashed=1;" parent="1" source="7" target="optionC" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="580" y="560" as="sourcePoint" />
             <mxPoint x="600" y="590" as="targetPoint" />
@@ -351,7 +351,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="optionArrow4" value="" style="endArrow=classic;html=1;exitX=0.829;exitY=0.975;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#BDBDBD;dashed=1;edgeStyle=elbowEdgeStyle;elbow=vertical;exitPerimeter=0;" edge="1" parent="1" source="7" target="optionD">
+        <mxCell id="optionArrow4" value="" style="endArrow=classic;html=1;exitX=0.829;exitY=0.975;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#BDBDBD;dashed=1;edgeStyle=elbowEdgeStyle;elbow=vertical;exitPerimeter=0;" parent="1" source="7" target="optionD" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="640" y="560" as="sourcePoint" />
             <mxPoint x="800" y="590" as="targetPoint" />
@@ -360,7 +360,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="optionAFlow" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#4CAF50;" edge="1" parent="1" source="optionA" target="8">
+        <mxCell id="optionAFlow" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#4CAF50;" parent="1" source="optionA" target="8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="520" y="560" as="sourcePoint" />
             <mxPoint x="580" y="590" as="targetPoint" />
@@ -478,70 +478,70 @@
             <mxPoint x="390" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="optionsNote" value="&lt;b&gt;Cookie Processing Options:&lt;/b&gt;&lt;br&gt;1. JavaScript is the recommended approach - extracts only name=value pairs&lt;br&gt;2. Logic Apps actions often fail - they don&#39;t properly format cookies for SAP&lt;br&gt;3. API Management and Azure Functions work but add complexity&lt;br&gt;4. SAP is very particular about cookie format - must be exactly name=value pairs" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF176;strokeColor=#FFD600;align=left;spacingLeft=10;fontColor=#212121;fontSize=11;" vertex="1" parent="1">
+        <mxCell id="optionsNote" value="&lt;b&gt;Cookie Processing Options:&lt;/b&gt;&lt;br&gt;1. JavaScript is the recommended approach - extracts only name=value pairs&lt;br&gt;2. Logic Apps actions often fail - they don&#39;t properly format cookies for SAP&lt;br&gt;3. API Management and Azure Functions work but add complexity&lt;br&gt;4. SAP is very particular about cookie format - must be exactly name=value pairs" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF176;strokeColor=#FFD600;align=left;spacingLeft=10;fontColor=#212121;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="-30" y="570" width="260" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="optionsNoteArrow" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#FFD600;" edge="1" parent="1" source="optionA" target="optionsNote">
+        <mxCell id="optionsNoteArrow" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#FFD600;" parent="1" source="optionA" target="optionsNote" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="460" y="420" as="sourcePoint" />
             <mxPoint x="400" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HB-I3aa6GFZ61M3Qegrq-42" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="-250" y="10" width="160" height="260" as="geometry" />
+        <mxCell id="HB-I3aa6GFZ61M3Qegrq-42" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="122" y="71" width="150" height="190" as="geometry" />
         </mxCell>
         <mxCell id="22" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#212121;fontColor=#FFFFFF;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry width="160" height="260" as="geometry" />
+          <mxGeometry width="150" height="190" as="geometry" />
         </mxCell>
         <mxCell id="23" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#FFFFFF;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="40" y="9.285714285714286" width="80" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="37.5" y="6.785714285714287" width="75" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="24" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="20" y="37.142857142857146" width="30" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="18.75" y="27.14285714285715" width="28.125" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="25" value="Trigger" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="60" y="37.142857142857146" width="90" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="56.25" y="27.14285714285715" width="84.375" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="26" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E7D32;strokeColor=#1B5E20;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="20" y="65" width="30" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="18.75" y="47.5" width="28.125" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="27" value="Variables" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="60" y="65" width="90" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="56.25" y="47.5" width="84.375" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="28" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E65100;strokeColor=#BF360C;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="20" y="92.85714285714286" width="30" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="18.75" y="67.85714285714286" width="28.125" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="29" value="HTTP Request" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="60" y="92.85714285714286" width="90" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="56.25" y="67.85714285714286" width="84.375" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="30" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F9A825;strokeColor=#F57F17;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="20" y="120.71428571428572" width="30" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="18.75" y="88.21428571428572" width="28.125" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="31" value="Condition" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="60" y="120.71428571428572" width="90" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="56.25" y="88.21428571428572" width="84.375" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="32" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C62828;strokeColor=#B71C1C;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="20" y="148.57142857142858" width="30" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="18.75" y="108.5714285714286" width="28.125" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="33" value="Response" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="60" y="148.57142857142858" width="90" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="56.25" y="108.5714285714286" width="84.375" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="debug3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6A1B9A;strokeColor=#4A148C;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="20" y="176.42857142857144" width="30" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="18.75" y="128.92857142857144" width="28.125" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="debug4" value="Debug Logging" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="60" y="176.42857142857144" width="90" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="56.25" y="128.92857142857144" width="84.375" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="error2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D32F2F;strokeColor=#B71C1C;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="20" y="204.2857142857143" width="30" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="18.75" y="149.2857142857143" width="28.125" height="13.571428571428575" as="geometry" />
         </mxCell>
         <mxCell id="error3" value="Error Handling" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="HB-I3aa6GFZ61M3Qegrq-42" vertex="1">
-          <mxGeometry x="60" y="204.2857142857143" width="90" height="18.571428571428573" as="geometry" />
+          <mxGeometry x="56.25" y="149.2857142857143" width="84.375" height="13.571428571428575" as="geometry" />
         </mxCell>
-        <mxCell id="RO2TEnVWdCE-l0GPCzcL-42" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="RO2TEnVWdCE-l0GPCzcL-42" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="-400" y="800" width="1150" height="740" as="geometry" />
         </mxCell>
-        <mxCell id="RO2TEnVWdCE-l0GPCzcL-45" value="" style="group" vertex="1" connectable="0" parent="RO2TEnVWdCE-l0GPCzcL-42">
+        <mxCell id="RO2TEnVWdCE-l0GPCzcL-45" value="" style="group" parent="RO2TEnVWdCE-l0GPCzcL-42" vertex="1" connectable="0">
           <mxGeometry x="420" y="221" width="1029.59" height="440" as="geometry" />
         </mxCell>
         <mxCell id="codeBox" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#263238;strokeColor=#1A237E;fontColor=#FFFFFF;align=center;spacingTop=5;fontSize=14;fontStyle=1" parent="RO2TEnVWdCE-l0GPCzcL-45" vertex="1">
@@ -553,7 +553,7 @@
         <mxCell id="40" value="&lt;div&gt;&lt;b&gt;Handle SAP&#39;s CSRF Token + Cookies Authentication Pattern&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;// STEP 1: Pre-flight GET to fetch token + session cookies&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;HTTP action: GET the same endpoint you&#39;ll later modify&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Headers:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; x-csrf-token: Fetch&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; Accept: application/json&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;// Save from GET response:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;x-csrf-token (header)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Set-Cookie (all values; includes MYSAPSSO2, saplb_*, etc.)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;// STEP 2: Process cookies (REQUIRED)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;// SAP won&#39;t accept cookies with Path/Domain/Expires attributes&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;// Must extract only &quot;name=value&quot; pairs&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Option A - Using Inline JavaScript:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;```javascript&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;function formatCookies(cookieString) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; return cookieString.split(&#39;,&#39;)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .map(cookie =&amp;gt; cookie.trim().split(&#39;;&#39;)[0].trim())&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .join(&#39;; &#39;);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;}&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;return formatCookies(workflowContext.actions.GET_preflight.outputs.headers[&quot;Set-Cookie&quot;]);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;```&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;fillColor=none;strokeColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;spacingLeft=10;" parent="RO2TEnVWdCE-l0GPCzcL-45" vertex="1">
           <mxGeometry x="10" y="27" width="595.91" height="383" as="geometry" />
         </mxCell>
-        <mxCell id="RO2TEnVWdCE-l0GPCzcL-43" value="&lt;div&gt;&lt;b&gt;Option B - Using Logic Apps native actions (often fails with SAP):&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- Initialize variable &#39;cookies&#39; as array&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- Parse &#39;Set-Cookie&#39; into array elements&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- For each cookie, extract value before first semicolon&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- Join elements with semicolon + space delimiter&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Option C - Using API Management as middleware (requires additional service)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Option D - Using Azure Function as middleware (requires additional service)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;// STEP 3: Use token and formatted cookies in write call&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;HTTP action: POST/PUT/PATCH to target endpoint&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Headers:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; x-csrf-token: @{outputs(&#39;GET_preflight&#39;)?[&#39;headers&#39;][&#39;x-csrf-token&#39;]}&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; Cookie: @{outputs(&#39;Cookie_Processing_Step&#39;)} // Output from Step 2&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; Content-Type: application/json&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;// Other important settings&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Authentication: None (cookies handle authentication)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Follow redirects: true (for Web Dispatcher)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Disable chunking: true (if SAP rejects chunked uploads)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Retry policy: fixed (not default)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;// Common errors:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- 403 Forbidden: Usually indicates improper cookie formatting&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- 401 Unauthorized: Session may have expired&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- 500 Internal Server: Check payload format&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;fillColor=none;strokeColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;spacingLeft=10;" vertex="1" parent="RO2TEnVWdCE-l0GPCzcL-45">
+        <mxCell id="RO2TEnVWdCE-l0GPCzcL-43" value="&lt;div&gt;&lt;b&gt;Option B - Using Logic Apps native actions (often fails with SAP):&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- Initialize variable &#39;cookies&#39; as array&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- Parse &#39;Set-Cookie&#39; into array elements&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- For each cookie, extract value before first semicolon&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- Join elements with semicolon + space delimiter&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Option C - Using API Management as middleware (requires additional service)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Option D - Using Azure Function as middleware (requires additional service)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;// STEP 3: Use token and formatted cookies in write call&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;HTTP action: POST/PUT/PATCH to target endpoint&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Headers:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; x-csrf-token: @{outputs(&#39;GET_preflight&#39;)?[&#39;headers&#39;][&#39;x-csrf-token&#39;]}&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; Cookie: @{outputs(&#39;Cookie_Processing_Step&#39;)} // Output from Step 2&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; Content-Type: application/json&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;// Other important settings&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Authentication: None (cookies handle authentication)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Follow redirects: true (for Web Dispatcher)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Disable chunking: true (if SAP rejects chunked uploads)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Retry policy: fixed (not default)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;// Common errors:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- 403 Forbidden: Usually indicates improper cookie formatting&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- 401 Unauthorized: Session may have expired&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- 500 Internal Server: Check payload format&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;fillColor=none;strokeColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;spacingLeft=10;" parent="RO2TEnVWdCE-l0GPCzcL-45" vertex="1">
           <mxGeometry x="560" y="27.07" width="455.91" height="382.93" as="geometry" />
         </mxCell>
       </root>
