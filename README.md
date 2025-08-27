@@ -13,6 +13,8 @@ Last updated: 2025-08-27
 > [!NOTE]
 > When implementing SAP integration with Azure Logic Apps, understanding the difference between stateful and stateless modes is crucial, particularly for handling session cookies and maintaining state between requests.
 
+> Logic Apps `doesn't maintain a cookie jar or session state between HTTP actions`. When extracting cookies from SAP responses, `Logic Apps may modify the format` in ways that cause authentication failures (403 Forbidden) in subsequent requests to SAP systems, which are `very particular about cookie formats`.
+
 <details>
 <summary><b>Stateful mode</b> (Click to expand)</summary>
 
@@ -39,9 +41,6 @@ Last updated: 2025-08-27
 - **Documentation**: For more details, see [Call External HTTPS Endpoints from Workflows](https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference).
 
 </details>
-
-> Logic Apps `doesn't maintain a cookie jar or session state between HTTP actions`. When extracting cookies from SAP responses, `Logic Apps may modify the format` in ways that cause authentication failures (403 Forbidden) in subsequent requests to SAP systems, which are `very particular about cookie formats`.
-
 
 > [!TIP]
 > SAP OData (Open Data Protocol) is a standardized REST-based protocol that SAP systems use to expose their business data and functionality. Key aspects include:
