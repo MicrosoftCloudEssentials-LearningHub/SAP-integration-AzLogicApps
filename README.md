@@ -36,7 +36,16 @@ Last updated: 2025-08-27
 
 <img width="4217" height="2630" alt="image" src="https://github.com/user-attachments/assets/e4cb0eb8-5eff-4052-9e92-284870d08bab" />
 
+### Manual Cookie Parsing in Logic
 
+### Custom Inline JavaScript
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/f724c1c0-d804-4938-9b84-c9f3ebe47eae" />
+
+
+### Azure API Management Gateway
+
+### Azure Fuction App 
 
 <!-- START BADGE -->
 <div align="center">
