@@ -10,6 +10,28 @@ Last updated: 2025-08-27
 
 -----------------------------
 
+
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [Enable stateful mode for stateless built-in connectors in Azure Logic Apps](https://learn.microsoft.com/en-us/azure/connectors/enable-stateful-affinity-built-in-connectors)
+- [Connect to SAP from workflows in Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/sap?tabs=consumption)
+- [Call external HTTP or HTTPS endpoints from workflows in Azure Logic Apps](https://learn.microsoft.com/en-us/azure///connectors/connectors-native-http?tabs=standard#known-issues)
+
+</details>
+
+<details>
+<summary><b>Table of Contents</b> (Click to expand)</summary>
+
+- [Integration Approaches](#integration-approaches)
+    - [Manual Cookie Parsing in Logic](#manual-cookie-parsing-in-logic)
+    - [Custom Inline JavaScript](#custom-inline-javascript)
+    - [Azure API Management Gateway](#azure-api-management-gateway)
+    - [Azure Function Intermediary](#azure-function-intermediary)
+- [Implementation workflow](#implementation-workflow)
+
+</details>
+
 > [!NOTE]
 > When implementing SAP integration with Azure Logic Apps, understanding the difference between stateful and stateless modes is crucial, particularly for handling session cookies and maintaining state between requests.
 
@@ -46,20 +68,6 @@ Last updated: 2025-08-27
 > SAP OData (Open Data Protocol) is a standardized REST-based protocol that SAP systems use to expose their business data and functionality. Key aspects include:
 > - **REST API Standard**: OData follows REST principles and enables CRUD operations on SAP data
 > - **Business Data Access**: Provides a standardized way to access SAP business objects, transactions, and reports
-
-<details>
-<summary><b>List of References</b> (Click to expand)</summary>
-
-- [Enable stateful mode for stateless built-in connectors in Azure Logic Apps](https://learn.microsoft.com/en-us/azure/connectors/enable-stateful-affinity-built-in-connectors)
-- [Connect to SAP from workflows in Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/sap?tabs=consumption)
-- [Call external HTTP or HTTPS endpoints from workflows in Azure Logic Apps](https://learn.microsoft.com/en-us/azure///connectors/connectors-native-http?tabs=standard#known-issues)
-
-</details>
-
-<details>
-<summary><b>Table of Contents</b> (Click to expand)</summary>
-
-</details>
 
 ## Integration Approaches
 
