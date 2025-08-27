@@ -10,6 +10,36 @@ Last updated: 2025-08-27
 
 -----------------------------
 
+> [!NOTE]
+> When implementing SAP integration with Azure Logic Apps, understanding the difference between stateful and stateless modes is crucial, particularly for handling session cookies and maintaining state between requests.
+
+<details>
+<summary><b>Stateful mode</b> (Click to expand)</summary>
+
+> In stateful Logic Apps, the workflow engine maintains the state of each action execution, which can help with long-running operations but doesn't solve the cookie handling challenge with SAP.
+
+- **Configuration**: When selecting a Standard type Logic App, you can configure your resource to use stateful mode.
+- **Requirements**: For stateful mode with SAP connectivity, you often need to enable virtual network integration and configure private ports.
+- **Persistence**: While the workflow state is persisted, individual HTTP connectors still don't maintain cookie state between actions.
+- **Documentation**: For detailed configuration, see [Enable stateful mode for stateless built-in connectors in Azure Logic Apps](https://learn.microsoft.com/en-us/azure/connectors/enable-stateful-affinity-built-in-connectors)
+
+</details>
+
+<details>
+<summary><b>Stateless mode</b> (Click to expand)</summary>
+
+> Stateless Logic Apps execute each action independently, which is the default behavior for HTTP actions regardless of the overall workflow type.
+
+- **Cookie Handling Challenges**: Each HTTP action operates independently with no shared cookie jar or session manager.
+- **Header Modifications**: Logic Apps may alter cookie headers before sending:
+  - Changing delimiters or the order of cookies
+  - Adding attributes like Path, Secure, or HttpOnly (which should not appear in the Cookie header)
+  - Treating the cookie string as plain text rather than as a proper cookie object
+- **Performance**: Stateless workflows generally have better performance and scalability but require manual session management.
+- **Documentation**: For more details, see [Call External HTTPS Endpoints from Workflows](https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference).
+
+</details>
+
 > Logic Apps `doesn't maintain a cookie jar or session state between HTTP actions`. When extracting cookies from SAP responses, `Logic Apps may modify the format` in ways that cause authentication failures (403 Forbidden) in subsequent requests to SAP systems, which are `very particular about cookie formats`.
 
 
