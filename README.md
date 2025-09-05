@@ -11,7 +11,7 @@ Last updated: 2025-08-29
 -----------------------------
 
 > [!IMPORTANT]
-> Comparison of approaches for handling cookie and CSRF token management. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
+> Comparison of approaches for handling cookie and CSRF token management. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
 
 
