@@ -5,9 +5,14 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-08-27
+Last updated: 2025-09-05
 
 -----------------------------
+
+> [!IMPORTANT]
+> Comparison of approaches for handling cookie and CSRF token management. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
+
+
 
 
 <details>
@@ -16,6 +21,7 @@ Last updated: 2025-08-27
 - [Enable stateful mode for stateless built-in connectors in Azure Logic Apps](https://learn.microsoft.com/en-us/azure/connectors/enable-stateful-affinity-built-in-connectors)
 - [Connect to SAP from workflows in Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/sap?tabs=consumption)
 - [Call external HTTP or HTTPS endpoints from workflows in Azure Logic Apps](https://learn.microsoft.com/en-us/azure///connectors/connectors-native-http?tabs=standard#known-issues)
+- [Differences between Standard single-tenant logic apps versus Consumption multitenant logic apps](https://learn.microsoft.com/en-us/azure/logic-apps/single-tenant-overview-compare)
 
 </details>
 
@@ -32,7 +38,21 @@ Last updated: 2025-08-27
 </details>
 
 > [!NOTE]
-> When implementing SAP integration with Azure Logic Apps, understanding the difference between stateful and stateless modes is crucial, particularly for handling session cookies and maintaining state between requests.
+> When implementing SAP integration with Azure Logic App `Standard`, understanding the difference between stateful and stateless modes is crucial, particularly for handling session cookies and maintaining state between requests.
+
+`BAPI (Business Application Programming Interface)`
+
+| Feature                          | Stateful Mode (Maintains state between actions)         | Stateless Mode (Executes each action independently)     |
+|----------------------------------|----------------------------------------------------------|----------------------------------------------------------|
+| **Session Management**           | Maintains session cookies (e.g., SAP login reused)       | No session cookies retained (new login each time)        |
+| **State Persistence**            | Workflow remembers previous steps                        | No memory of past executions                             |
+| **Use Case**                     | SAP BAPI calls needing session continuity                | Simple one-off SAP queries or triggers                   |
+| **Performance**                  | Slightly slower due to state tracking                    | Faster, lower resource usage                             |
+| **Durability**                   | Supports long-running workflows (can resume if paused)   | Short-lived, no built-in resume capability               |
+| **Complexity**                   | More setup and monitoring required                       | Easier to configure and maintain                         |
+| **Example Scenario**            | SAP BAPI for creating a sales order (needs login reuse)  | Fetching SAP data via trigger (no login reuse needed)    |
+
+
 
 > Logic Apps `doesn't maintain a cookie jar or session state between HTTP actions`. When extracting cookies from SAP responses, `Logic Apps may modify the format` in ways that cause authentication failures (403 Forbidden) in subsequent requests to SAP systems, which are `very particular about cookie formats`.
 
@@ -282,7 +302,7 @@ Last updated: 2025-08-27
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1342-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-08-29</p>
+  <img src="https://img.shields.io/badge/Total%20views-1368-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-09-05</p>
 </div>
 <!-- END BADGE -->
