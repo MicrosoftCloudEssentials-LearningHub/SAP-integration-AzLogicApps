@@ -1,0 +1,33 @@
+{
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "actions": {
+      "Response": {
+        "inputs": {
+          "statusCode": 200,
+          "body": {
+            "status": "healthy",
+            "message": "Logic App health check is responding",
+            "timestamp": "@utcNow()",
+            "mode": "Stateful"
+          }
+        },
+        "kind": "Http",
+        "type": "Response"
+      }
+    },
+    "triggers": {
+      "request": {
+        "type": "Request",
+        "kind": "Http",
+        "inputs": {
+          "schema": {},
+          "relativePath": "/"
+        }
+      }
+    },
+    "contentVersion": "1.0.0.0",
+    "outputs": {}
+  },
+  "kind": "Stateful"
+}
