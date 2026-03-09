@@ -1,0 +1,10 @@
+{
+  "name": "logicapp-workflows",
+  "version": "1.0.0",
+  "description": "Logic App Workflows",
+  "main": "site.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {}
+}
