@@ -12,7 +12,11 @@ Last updated: 2025-08-29
 > This approach focuses on `setting up the required infrastructure via Terraform`. It allows for source control of not only the solution code, connections, and setups `but also the infrastructure itself`. This repository specifically focuses on SAP integration with Azure Logic Apps, supporting both Stateful and Stateless workflow configurations.
 
 <div align="center">
-  <img src="" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://github.com/user-attachments/assets/ca334920-f87b-46ed-a040-d06cdc4869ba" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/98d54949-6103-43ef-8a30-f16c40655f0f" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
 > The Terraform configuration supports both Stateful and Stateless Logic Apps, which have different characteristics:
